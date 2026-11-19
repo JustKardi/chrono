@@ -1,5 +1,6 @@
 <script>
     import Logo from "#lib/components/Logo.svelte";
+    import HomeContent from "./HomeContent.svelte";
 </script>
 
 <div class="fixed inset-0 flex justify-center items-center w-full h-screen z-0">
@@ -23,5 +24,5 @@
 
 <div class="relative z-10 min-h-[200vh] prose px-8 pb-12">
     <div class="h-screen mb-12"></div>
-    <h1>Welcome to CHRONO</h1>
+    <HomeContent />
 </div>
