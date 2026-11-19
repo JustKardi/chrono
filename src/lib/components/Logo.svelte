@@ -2,6 +2,8 @@
     import Clock from "./Clock.svelte";
 
 </script>
-<h1 class="font-jbmono text-9xl w-full text-center">CHR<span class="inline-block w-[1em] align-middle">
-    <Clock />
+<h1 class="font-jbmono text-[15cqw] w-full text-center">CHR<span class="inline-block w-[1em] align-middle">
+    <div class="mb-6">
+        <Clock />
+    </div>
 </span>NO</h1>
