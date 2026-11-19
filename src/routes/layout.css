@@ -1,0 +1,18 @@
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import 'tailwindcss';
+
+:root {
+    --color-bg1: #0b0c0d;
+    --color-primary: #13cb28;
+    --color-secondary: oklch(from var(--color-primary) calc(l - 0.3) c h);
+    --color-tertiary: oklch(from var(--color-primary) calc(l - 0.4) c h);
+    --color-text: var(--color-primary);
+    --font-jbmono: "JetBrains Mono", monospace;
+}
+
+body {
+    background-color: var(--color-bg1);
+    color: var(--color-text);
+    font-family: var(--font-jbmono);
+}
