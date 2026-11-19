@@ -1,1 +1,9 @@
 @import 'tailwindcss';
+
+:root {
+    --bg1: #0b0c0d;
+    --primary: #13cb28;
+    --secondary: oklch(from var(--primary) calc(l - 0.3) c h);
+    --tertiary: oklch(from var(--primary) calc(l - 0.4) c h);
+    --text: var(--primary)
+}

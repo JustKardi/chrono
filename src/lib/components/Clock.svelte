@@ -98,10 +98,10 @@
 
 <style>
     .clock {
-        background-color: #0b0c0d;
+        background-color: var(--bg1);
         border-radius: 100%;
-        border: 0.1rem solid #13cb28;
-        box-shadow: 0px 0px 100px 10px rgba(19, 203, 40, 0.5);
+        border: 0.1rem solid var(--primary);
+        box-shadow: 0px 0px 100px 10px var(--secondary);
         pointer-events: none;
         opacity: 0.9;
         transition: opacity 0.1s ease-out;
@@ -110,19 +110,19 @@
         transform: rotate(-90deg);
     }
     .hour_svg {
-        stroke: #13cb28;
+        stroke: var(--primary);
         animation-delay: 0.1s;
     }
     .minute_svg {
-        stroke: #0d981d;
+        stroke: var(--secondary);
         animation-delay: 0.3s;
     }
     .second_svg {
-        stroke: #096c14;
+        stroke: var(--tertiary);
         animation-delay: 0.5s;
     }
     .clock-hands text {
-        fill: #13cb28;
+        fill: var(--text);
         font-size: 0.5vw;
         font-weight: bold;
 
@@ -133,7 +133,7 @@
 
         transform: rotate(90deg);
 
-        box-shadow: 0px 0px 20px 3px #0b0c0d;
+        box-shadow: 0px 0px 20px 3px var(--bg);
     }
     .clock-hands polygon {
         stroke-dasharray: 100;
