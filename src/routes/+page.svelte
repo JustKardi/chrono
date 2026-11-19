@@ -1,5 +1,7 @@
 <script>
-    import Clock from "#lib/components/Clock.svelte";
+    import Logo from "#lib/components/Logo.svelte";
 </script>
 
-<Clock />
+<div class="mt-12"></div>
+
+<Logo />
