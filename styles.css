@@ -1,0 +1,78 @@
+body {
+    background-color: #0b0c0d;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.clock {
+    background-color: #0b0c0d;
+    width: 40vw;
+    height: 40vw;
+    border-radius: 100vw;
+    border: 0.2vw solid #13cb28;
+    box-shadow: 0px 0px 100px 10px rgba(19, 203, 40, 0.5);
+    z-index: -100;
+    pointer-events: none;
+    opacity: 0.9;
+    transition: opacity 0.1s ease-out;
+}
+.clock-parent {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+.center-dot {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 0.2vw;
+    height: 0.2vw;
+    background-color: oklab(73.19200000000001% -0.19038 0.14089);
+    border-radius: 100vw;
+}
+.clock-hands {
+    transform: rotate(-90deg);
+}
+.hour_svg {
+    stroke: #13cb28;
+    animation-delay: 0.1s;
+}
+.minute_svg {
+    stroke: #0d981d;
+    animation-delay: 0.3s;
+}
+.second_svg {
+    stroke: #096c14;
+    animation-delay: 0.5s;
+}
+.clock-hands text {
+    fill: #13cb28;
+    font-size: 0.5vw;
+    font-weight: bold;
+
+    text-anchor: middle;
+    dominant-baseline: central;
+
+    user-select: none;
+
+    transform: rotate(90deg);
+
+    box-shadow: 0px 0px 20px 3px #0b0c0d;
+}
+.clock-hands polygon {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+
+    animation: drawHand 1.5s ease-out forwards;
+
+    z-index: -1000;
+}
+
+@keyframes drawHand {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
