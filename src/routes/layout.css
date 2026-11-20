@@ -43,6 +43,17 @@ body {
     animation-range: 0px 100vh;
     animation-timing-function: ease-out;
 }
+button, .buttonStyledA {
+    padding: 5px;
+    outline-width: 1px;
+    outline-color: var(--color-primary);
+    outline-style: solid;
+    text-decoration: none;
+}
+
+button:hover, .buttonStyledA:hover {
+    background-color:#0e971d;
+}
 
 @keyframes fade-out {
     to {
