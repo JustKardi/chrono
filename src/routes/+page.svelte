@@ -30,7 +30,7 @@
 </div>
 
 <!-- Scrollable content layer, sits above the fixed hero (z-10) -->
-<div class="relative z-10 min-h-[200vh] pb-12">
+<div class="relative z-10 min-h-[200vh] pb-12 px-[10vw] gap-[5vh]">
     <!-- Empty spacer so the hero logo is visible before the content scrolls in -->
     <div class="h-screen mb-12"></div>
     <!-- Two columns on medium+ screens, stacked on mobile -->
@@ -47,8 +47,8 @@
         </div>
 
         <!-- Right column: logo that stays stuck in view while the left column scrolls -->
-        <div class="relative z-10 prose px-[32px] pb-[150px] max-w-none -ml-[50px]">
-            <div class="sticky top-1/20 height: 90vh width: 40wh">
+        <div class="relative z-10 max-w-none mt-[50vh] min-h-[200vh]">
+            <div class="sticky top-1/2 -translate-y-1/2 h-[70vh] w-[70vh] flex items-center justify-center">
                 <Clock />
             </div>
         </div>
