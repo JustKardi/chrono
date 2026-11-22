@@ -45,7 +45,7 @@
 
         <!-- Right column: logo that stays stuck in view while the left column scrolls -->
         <div class="relative z-10 prose px-[32px] pb-[150px] max-w-none -ml-[50px]">
-            <div class="sticky top-[30px]">
+            <div class="sticky top-1/20 height: 90vh width: 40wh">
                 <Clock />
             </div>
         </div>
