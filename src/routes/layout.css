@@ -61,3 +61,9 @@ button:hover, .buttonStyledA:hover {
         filter: blur(100px);
     }
 }
+.faqHeader {
+    outline-style: solid;
+    outline-offset: 5px;
+    outline-width: 1px;
+    margin-top: 3vh;
+}
