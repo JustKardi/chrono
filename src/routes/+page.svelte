@@ -1,7 +1,8 @@
 <script>
     import Logo from "#lib/components/Logo.svelte";
     import HomeContent from "./HomeContent.svelte";
-    import LongDescription from "#lib/components/LongDescription.svelte"
+    import LongDescription from "#lib/components/LongDescription.svelte";
+    import FAQ from "#lib/components/FAQ.svelte";
 </script>
 
 <div class="fixed inset-0 flex justify-center items-center w-full h-screen z-0">
@@ -28,8 +29,11 @@
     <div class="grid md:grid-cols-2 gap-6">
         <div class="relative z-10 min-h-[200vh] prose px-8 pb-12">
             <HomeContent />
-            <div style="padding-top: 50vh">
+            <div style="padding-top: 35vh">
                 <LongDescription />
+            </div>
+            <div style="padding-top: 35vh">
+                <FAQ />
             </div>
         </div>
 
