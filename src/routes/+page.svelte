@@ -4,8 +4,8 @@
     import Clock from "#lib/components/Clock.svelte";
     // Short intro text shown in the left column
     import HomeContent from "./HomeContent.svelte";
-    // Longer description shown further down the left column
-    import LongDescription from "#lib/components/LongDescription.svelte"
+    import LongDescription from "#lib/components/LongDescription.svelte";
+    import FAQ from "#lib/components/FAQ.svelte";
 </script>
 
 <!-- Hero: full-screen logo pinned behind the page; fades out as the user scrolls -->
@@ -38,8 +38,11 @@
         <!-- Left column: intro text, then the long description after a gap -->
         <div class="relative z-10 min-h-[200vh] prose px-8 pb-12">
             <HomeContent />
-            <div style="padding-top: 50vh">
+            <div style="padding-top: 35vh">
                 <LongDescription />
+            </div>
+            <div style="padding-top: 35vh">
+                <FAQ />
             </div>
         </div>
 
